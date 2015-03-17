@@ -16,7 +16,7 @@ Zad1
 ```
 Właściwość Content
 ------------------
-Pozwala na przypiszanie dowolnej zawartości do danej kontrolki.
+Pozwala na przypisanie dowolnej zawartości do danej kontrolki.
 
 Sposób 1
 ```xaml
@@ -36,14 +36,14 @@ Bardzo wygodne rozwiązanie przy skalowaniu aplikacji. Pozwala w sposób dynamic
 ```
 Wł: Background
 --------------
-Większość kontrolek posiada właściwość pozwalająca na ustawienie tła.
+Większość kontrolek posiada właściwość pozwalającą na ustawienie tła.
 ```xaml
 <Window Background="CadetBlue" />
 ```
 Wł: HorizontalAlignment i VerticalAlignment
 --------------
-Pozwalają na wyrównywane obiektu wzgłedem rodzina (przycisk względem okna)
-! Wartość właściowości Stretch pozwala na rozciągnięcie obiektu
+Pozwalają na wyrównywanie obiektu względem rodzica (przycisk względem okna)
+! Wartość właściwości Stretch pozwala na rozciągnięcie obiektu.
 ```xaml
 <Button HorizontalAlignment="Center" VerticalAlignment="Center" />
 ```
@@ -64,11 +64,11 @@ Pzykład
 <Button Click="NazwaMetody" />
 ```
 Obsługa klinięcia po stronie "code behind".
-W klasie okna MainWindow.xaml.cs tworzymy metode typu void pasująca pod sygnature kliknięcia.
+W klasie okna MainWindow.xaml.cs tworzymy metodę typu void pasującą pod sygnaturę kliknięcia.
 	
-Sender to obiekt na rzecz, którego zostało wykonane zdarzenie. Parametr e to argumenty tego zdarzenia.
+Sender to obiekt, na rzecz którego zostało wykonane zdarzenie. Parametr e to argumenty tego zdarzenia.
 	
-Klasa MessageBox posiada statyczna metode Show wyświetlająca komunikat na podstawie swoich parametrów.
+Klasa MessageBox posiada statyczną metodę Show wyświetlającą komunikat na podstawie swoich parametrów.
 MessageBox.Show("param1-tresc", "param2-tytul");
 ```csharp
 private void PokazKomunikat(object sender, RoutedEventArgs e)
